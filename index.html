@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-HW4</title>
+</head>
+<body>
+    
+    <h3>Перевірка заповнення двох текстових полів</h3>
+    <input type="text" id="text1">
+    <input type="text" id="text2">
+    <button onclick="checkTextFields()">Перевірити</button>
+    <p id="textResult"></p>
+
+  
+    <h3>Перевірка суми числових полів</h3>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="checkSum()">Перевірити</button>
+    <p id="sumResult"></p>
+
+
+    <h3>Перевірка наявності слова "JavaScript"</h3>
+    <input type="text" id="jsText">
+    <button onclick="checkJavaScript()">Перевірити</button>
+    <p id="jsResult"></p>
+
+    <h3>Перевірка числа в діапазоні від 10 до 20</h3>
+    <input type="number" id="rangeNumber">
+    <button onclick="checkRange()">Перевірити</button>
+    <p id="rangeResult"></p>
+
+    <h3>Перевірка правильності заповнення даних</h3>
+    <form id="validationForm" onsubmit="return validateForm()">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <button type="submit">Надіслати</button>
+    </form>
+    <p id="formResult"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
